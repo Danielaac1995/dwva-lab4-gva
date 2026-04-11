@@ -359,7 +359,7 @@ function dvwaHtmlEcho( $pPage ) {
 	}
 	// -- END (security cookie)
 
-	$userInfoHtml = '<em>Username:</em> ' . ( dvwaCurrentUser() );
+	$userInfoHtml = '<em>Username:</em> ' . htmlspecialchars( dvwaCurrentUser() );
 	$securityLevelHtml = "<em>Security Level:</em> {$securityLevelHtml}";
 	$securityLevelHtml = "<em>Security Level:</em> {$securityLevelHtml}";
 	$localeHtml = '<em>Locale:</em> ' . ( dvwaLocaleGet() );
