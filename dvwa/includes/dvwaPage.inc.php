@@ -362,8 +362,8 @@ function dvwaHtmlEcho( $pPage ) {
 	$userInfoHtml = '<em>Username:</em> ' . htmlspecialchars( dvwaCurrentUser() );
 	$securityLevelHtml = "<em>Security Level:</em> {$securityLevelHtml}";
 	$securityLevelHtml = "<em>Security Level:</em> {$securityLevelHtml}";
-	$localeHtml = '<em>Locale:</em> ' . ( dvwaLocaleGet() );
-	$sqliDbHtml = '<em>SQLi DB:</em> ' . ( dvwaSQLiDBGet() );
+	$localeHtml = '<em>Locale:</em> ' . htmlspecialchars( dvwaLocaleGet() );
+	$sqliDbHtml = '<em>SQLi DB:</em> ' . htmlspecialchars( dvwaSQLiDBGet() );
 
 
 	$messagesHtml = messagesPopAllToHtml();
