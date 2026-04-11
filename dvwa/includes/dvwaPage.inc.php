@@ -191,7 +191,7 @@ function &dvwaPageNewGrab() {
 
 function dvwaThemeGet() {
 	if (isset($_COOKIE['theme'])) {
-		return $_COOKIE[ 'theme' ];
+		return htmlspecialchars($_COOKIE[ 'theme' ]);
 	}
 	return 'light';
 }
@@ -202,7 +202,7 @@ function dvwaSecurityLevelGet() {
 
 	// If there is a security cookie, that takes priority.
 	if (isset($_COOKIE['security'])) {
-		return $_COOKIE[ 'security' ];
+		return htmlspecialchars($_COOKIE[ 'security' ]);
 	}
 
 	// If not, check to see if authentication is disabled, if it is, use
