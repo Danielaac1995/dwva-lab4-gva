@@ -393,7 +393,7 @@ function dvwaHtmlEcho( $pPage ) {
 	<head>
 		<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />
 
-		<title>{$pPage[ 'title' ]}</title>
+		<title>" . htmlspecialchars($pPage[ 'title' ]) . "</title>
 
 		<link rel=\"stylesheet\" type=\"text/css\" href=\"" . DVWA_WEB_PAGE_TO_ROOT . "dvwa/css/main.css\" />
 
@@ -466,7 +466,7 @@ function dvwaHelpHtmlEcho( $pPage ) {
 
 		<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />
 
-		<title>{$pPage[ 'title' ]}</title>
+		<title>" . htmlspecialchars($pPage[ 'title' ]) . "</title>
 
 		<link rel=\"stylesheet\" type=\"text/css\" href=\"" . DVWA_WEB_PAGE_TO_ROOT . "dvwa/css/help.css\" />
 
@@ -502,7 +502,7 @@ function dvwaSourceHtmlEcho( $pPage ) {
 
 		<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />
 
-		<title>{$pPage[ 'title' ]}</title>
+		<title>" . htmlspecialchars($pPage[ 'title' ]) . "</title>
 
 		<link rel=\"stylesheet\" type=\"text/css\" href=\"" . DVWA_WEB_PAGE_TO_ROOT . "dvwa/css/source.css\" />
 
